@@ -55,7 +55,7 @@ section {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    
     gap: var(--space);
 }
 
@@ -73,12 +73,13 @@ section {
 
 .col {
     flex-grow: 1;
+    flex-basis: 0;
     border: 1px dashed green;
     padding: 1rem;
     border-radius: 15px;
 }
 
-/* .col-1-3 {
+.col-1-3 {
     flex-basis: calc((100% / 3) - var(--space));
 }
 
@@ -88,7 +89,7 @@ section {
 
 .col-1-2 {
     flex-basis: calc(50% - var(--space));
-} */
+}
 
 
 
@@ -166,13 +167,10 @@ nav ul a {
     text-align: center;
 }
 
-.demo-section .col-1-2, .col-1-3 {
+.demo-section .col-1-2, .demo-section .col-1-3 {
     background-color: var(--color-tertiary);
 }
 
-.demo-section .col .col-2-3:nth-child(2) {
-    padding-bottom: -1rem;
-}
 
 .demo-section .col-1-2 img {
     width: 100%;
@@ -181,6 +179,11 @@ nav ul a {
 .demo-section .col-2-3 a {
     color: white;
     text-decoration: none;
+    margin-top: 50px;
+}
+
+.demo-section .col-2-3:first-child {
+    border-radius: 15px, 15px, 0, 0;
 }
 
 .planing-section {
@@ -220,6 +223,24 @@ nav ul a {
     background-color: white;
     border-radius: 15px;
     padding: 20px;
+}
+
+.about-us-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.get-started-section {
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: white;
+    text-align: center;
 }
 
 
