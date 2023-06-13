@@ -3,6 +3,7 @@
     --color-secondary: #0084fd;
     --color-tertiary: #b5ddff;
     --color-dark: #333333;
+    --space: 1rem
 }
 
 * {
@@ -51,6 +52,44 @@ section {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-0 {
+    --my-gap: 0rem;
+}
+
+.space-2 {
+    --my-gap: 2rem;
+}
+
+.space-3 {
+    --my-gap: 3rem;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px dashed green;
+    padding: 1rem;
+}
+
+.col-1-3 {
+    flex-basis: calc((100% / 3) - var(--space));
+}
+
+.col-2-3 {
+    flex-basis: calc(((100% / 3) * 2) - var(--space));
+}
+
+.col-1-2 {
+    flex-basis: calc(50% - var(--space));
+}
+
+
 
 .btn {
     border-radius: 15px;
