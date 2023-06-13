@@ -212,6 +212,16 @@ nav ul a {
     padding: 20px;
 }
 
+.benefits-section {
+    background-color: var(--color-primary);
+}
+
+.benefits-section .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
 
 
 
