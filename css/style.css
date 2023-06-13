@@ -15,6 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* CONTAINER */
 .container {
     border: 2px dashed black;
     margin: auto;
@@ -22,6 +23,26 @@ body {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.container-md {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container-sm {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container-xs {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.container-xxs {
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 section {
@@ -53,7 +74,6 @@ nav .nav-brand {
     display: flex;
     align-items: center;
 }
-
 
 .nav-menu-btn {
     padding: 1rem;
