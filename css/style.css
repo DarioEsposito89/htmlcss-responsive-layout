@@ -141,3 +141,10 @@ nav ul a {
     color: white;
     padding: 0.5rem 1rem;
 }
+
+/* SECTION */
+
+.demo-section .col-1-2 img {
+    width: 100%;
+    text-align: center;
+}
