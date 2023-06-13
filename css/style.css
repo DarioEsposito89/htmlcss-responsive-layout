@@ -97,13 +97,12 @@ section {
 }
 
 .btn-md {
-    padding: .5rem 1rem;
-    margin-top: var(--space);
-    margin-bottom: var(--space);
+    padding: .5rem 2rem;
 }
 
 .btn-primary {
     background-color: var(--color-primary);
+    margin-top: 20px;
 }
 
 .btn-secondary {
@@ -183,7 +182,6 @@ nav ul a {
 .demo-section .col-2-3 a {
     color: white;
     text-decoration: none;
-    
 }
 
 
