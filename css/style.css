@@ -239,6 +239,14 @@ nav ul a {
 }
 
 /* TESTIMONIAL SECTION */
+.testimonials-section .container {
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: var(--color-primary);
+}
+
 .testimonials-section img {
     object-fit: cover;
     height: 150px;
@@ -247,11 +255,18 @@ nav ul a {
 }
 
 .testimonials-section .card {
+    color: white;
     background-color: var(--color-primary);
     border-radius: 15px;
     padding: 20px;
+    text-align: center;
 }
 
+.testimonial-name {
+    padding-top: var(--space);
+}
+
+/* BENEFITS SECTION */
 .benefits-section {
     background-color: var(--color-primary);
 }
