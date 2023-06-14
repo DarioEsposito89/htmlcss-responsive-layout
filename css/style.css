@@ -1,3 +1,4 @@
+/* -------VARIABILI------------ */
 :root {
     --color-primary: #9792e4;
     --color-secondary: #0084fd;
@@ -6,6 +7,7 @@
     --space: 1rem
 }
 
+/* --------DEFAULT--------------- */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CONTAINER */
+/* UTILITY */
+
+/* -----------CONTAINER--------------- */
 .container {
     border: 2px dashed black;
     margin: auto;
@@ -24,26 +28,6 @@ body {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-.container-md {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.container-sm {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.container-xs {
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-.container-xxs {
-    padding-left: 30%;
-    padding-right: 30%;
 }
 
 section {
@@ -59,20 +43,9 @@ section {
     gap: 1rem;
 }
 
-.space-0 {
-    --my-gap: 0rem;
-}
-
-.space-2 {
-    --my-gap: 2rem;
-}
-
-.space-3 {
-    --my-gap: 3rem;
-}
+/* ----------COLUMN----------- */
 
 .col {
-    border: 1px dashed green;
     padding: 1rem;
     border-radius: 15px;
 }
@@ -90,6 +63,12 @@ section {
 }
 
 
+/* ----------PARAGRAPH--------- */
+p {
+    line-height: 25px;
+}
+
+/* -------------BUTTONS---------- */
 .btn {
     border-radius: 15px;
     text-decoration: none;
@@ -121,6 +100,7 @@ section {
     color: black;
 }
 
+/* --------TITLE----------*/
 h2, h3, h4 {
     padding-bottom: 20px;
 }
@@ -167,8 +147,9 @@ nav ul a {
     padding: 0.5rem 1rem;
 }
 
-/* SECTION */
-
+/*****************
+SECTION 
+*****************/
 
 /* DEMO SECTION */
 .demo-section .col-1-3 {
@@ -228,8 +209,14 @@ nav ul a {
     object-fit: contain;
 }
 
-.planing-section h3, .planing-section span {
+.planing-section h3 {
     color: white;
+}
+
+.planing-section .row .col-1-2 span {
+    color: white;
+    line-height: 25px;
+
 }
 
 .planing-section a {
@@ -376,7 +363,7 @@ footer .footer-text-links a {
 }
 
 
-/* MEDIA QUERY */
+/* ------------MEDIA QUERY------------- */
 
 @media screen and (min-width: 576px) {
     nav .nav-brand-text {
@@ -401,7 +388,7 @@ footer .footer-text-links a {
         display: flex;
     }
 
-    /* SECTION QUERY TABLET */
+    /* ---------SECTION QUERY TABLET---------- */
 
     /* DEMO */
     .demo-section .row {
@@ -444,6 +431,7 @@ footer .footer-text-links a {
         width: 48%;
     }
 
+    /* ABOUT US */
     .about-us-section .container {
         padding-left: 40px;
         padding-right: 40px;
@@ -452,10 +440,24 @@ footer .footer-text-links a {
     .about-us-section .row {
         flex-direction: row;
     }
+
+    .about-us-section .btn-md {
+        padding: .5rem 0.5rem;
+    }
+    /* GET STARTED */
+    .get-started-section .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    /* FOOTER */
+    footer {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
 }
 
-
-
+/* ---------SECTION QUERY DESKTOP---------- */
 @media screen and (min-width: 992px) {
     .demo-section .col-2-3 {
         display: flex;
@@ -474,6 +476,10 @@ footer .footer-text-links a {
 
     .benefits-section .card {
         width: 32%;
+    }
+
+    .about-us-section .btn-md {
+        padding: .5rem 2rem;
     }
 }
 
