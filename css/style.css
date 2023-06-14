@@ -362,6 +362,14 @@ footer {
     text-align: center;
 }
 
+.footer-text-links {
+    padding-top: 40px;
+}
+
+footer .footer-text-links a {
+    color: var(--color-primary);
+}
+
 
 /* MEDIA QUERY */
 
