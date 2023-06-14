@@ -272,7 +272,7 @@ nav ul a {
     background-color: var(--color-primary);
 }
 
-.benefits-section h2, .benefits-section h3 {
+.benefits-section h2, .benefits-section h3, .about-us-section h2 {
     color: var(--color-primary);
 }
 
@@ -301,6 +301,25 @@ nav ul a {
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
+}
+
+.about-us-section .about-us-img {
+    position: relative;
+}
+
+.about-us-section .about-us-img i {
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-us-section a {
+    color: white;
+}
+
+.about-us-section h3 {
+    color: var(--color-primary);
 }
 
 .get-started-section {
