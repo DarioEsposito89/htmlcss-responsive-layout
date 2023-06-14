@@ -55,8 +55,8 @@ section {
 
 .row {
     display: flex;
-    
-    gap: var(--space);
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .space-0 {
@@ -72,8 +72,6 @@ section {
 }
 
 .col {
-    flex-grow: 1;
-    flex-basis: 0;
     border: 1px dashed green;
     padding: 1rem;
     border-radius: 15px;
@@ -92,9 +90,12 @@ section {
 }
 
 
-
 .btn {
     border-radius: 15px;
+}
+
+.btn-circle {
+    border-radius: 50%;
 }
 
 .btn-md {
@@ -114,7 +115,7 @@ section {
     color: black;
 }
 
-h3 {
+h2, h3, h4 {
     padding-bottom: 20px;
 }
 
@@ -162,6 +163,8 @@ nav ul a {
 
 /* SECTION */
 
+
+/* DEMO SECTION */
 .demo-section .col {
     width: 100%;
     text-align: center;
@@ -171,21 +174,37 @@ nav ul a {
     background-color: var(--color-tertiary);
 }
 
+.demo-section .btn-demo {
+    margin: 20px 0;
+}
+
+.demo-section h3 {
+    color: var(--color-secondary);
+}
+
+.demo-section .col-1-3 i {
+    font-size: 50px;
+    padding-bottom: var(--space);
+}
 
 .demo-section .col-1-2 img {
     width: 100%;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: -20px;
 }
 
 .demo-section .col-2-3 a {
     color: white;
     text-decoration: none;
-    margin-top: 50px;
 }
 
-.demo-section .col-2-3:first-child {
-    border-radius: 15px, 15px, 0, 0;
+.demo-section .col-2-3 {
+    border-radius: 15px;
+    background-color: var(--color-tertiary) ;
 }
 
+/* PLANING SECTION */
 .planing-section {
     background-color: var(--color-primary);
 }
@@ -194,6 +213,7 @@ nav ul a {
     background-color: white;
     border-radius: 15px;
     padding: 30px;
+    text-align: center;
 }
 
 .planing-section img {
@@ -202,10 +222,27 @@ nav ul a {
     object-fit: contain;
 }
 
+.planing-section h3, .planing-section span {
+    color: white;
+}
+
+.planing-section a {
+    background-color: var(--color-primary);
+    padding: 15px 0px;
+}
+
+.planing-section i {
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* TESTIMONIAL SECTION */
 .testimonials-section img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
 }
 
@@ -243,6 +280,40 @@ footer {
     text-align: center;
 }
 
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+    nav .nav-brand-text {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-menu-btn {
+    display: none;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .container ul {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
 
 
 
