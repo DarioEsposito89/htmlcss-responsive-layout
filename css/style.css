@@ -103,6 +103,11 @@ section {
     padding: .5rem 2rem;
 }
 
+.btn-large {
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+
 .btn-primary {
     background-color: var(--color-primary);
 }
@@ -276,7 +281,7 @@ nav ul a {
     color: var(--color-primary);
 }
 
-.benefits-section h2 {
+.benefits-section h2, .get-started-section h2 {
     font-size: 65px;
 }
 
@@ -322,9 +327,32 @@ nav ul a {
     color: var(--color-primary);
 }
 
+/* GET STARTED SECTION */
 .get-started-section {
     background-color: var(--color-primary);
     text-align: center;
+    color: white;
+}
+
+.get-started-section h4 {
+    color: #c8c6f0;
+}
+
+.get-started-section h2 {
+    color: #fdc15f;
+}
+
+.btn-get-started {
+    margin: 30px 0;
+}
+
+.get-started-section .btn-get-started a {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.get-started-section a {
+    color: white;
 }
 
 /* FOOTER */
