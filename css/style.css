@@ -107,6 +107,11 @@ h2, h3, h4 {
 /***********************
 NAVIGATION BAR 
  ***********************/
+nav {
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
 nav .container {
     background-color: var(--color-secondary)
 }
@@ -371,20 +376,7 @@ footer .footer-text-links a {
 
 @media screen and (min-width: 768px) {
     
-    /* NAV QUERY TABLET */
-    .nav-menu-btn {
-    display: none;
-    }
-
-    nav .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav .container ul {
-        display: flex;
-    }
+    
 
     /* ---------SECTION QUERY TABLET---------- */
 
@@ -455,12 +447,30 @@ footer .footer-text-links a {
     }
 }
 
-/* ---------SECTION QUERY DESKTOP---------- */
+
 @media screen and (min-width: 992px) {
+    
+    /* NAV QUERY TABLET */
+    .nav-menu-btn {
+    display: none;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .container ul {
+        display: flex;
+    }
+    
     .demo-section .col-2-3 {
         display: flex;
     }
 
+
+    /* ---------SECTION QUERY DESKTOP---------- */
     .demo-section .col-1-2 img {
         width: 100%;
         height: 310px;
